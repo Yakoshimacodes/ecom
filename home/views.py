@@ -6,7 +6,7 @@ from .models import *
 class BaseView(View):
     views = {}
     views['categories'] = Category.objects.all()
-    views['categories'] = Brand.objects.all()
+    views['brands'] = Brand.objects.all()
     views['contacts'] = ContactInfo.objects.all()
 
 class HomeView(BaseView):
