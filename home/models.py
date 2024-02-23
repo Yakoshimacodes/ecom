@@ -43,7 +43,7 @@ class Product(models.Model):
     category = models.ForeignKey(Category,on_delete=models.CASCADE)
     brand = models.ForeignKey(Brand, on_delete=models.CASCADE)
     description = models.TextField(blank=True)
-    specification = models.TextField(blank=true)
+    specification = models.TextField(blank=True)
 
     def __str__(self):
         return self.name
